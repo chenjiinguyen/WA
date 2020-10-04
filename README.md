@@ -6,6 +6,6 @@
 - [Bài Giảng Buổi 3](https://docs.google.com/presentation/d/1ZHUnPZCqRlS1KGTiTtfim8IKDmM5ZZE61BJDta-p_u8/edit?usp=sharing)
 
 ## Bài Tập
-- [Bài Tập Buổi 1](#)
+- [Bài Tập Buổi 1](https://github.com/chenjiinguyen/WA04/tree/master/Buoi1)
 - [Bài Tập Buổi 2](https://github.com/chenjiinguyen/WA04/tree/master/Buoi2)
 - [Bài Tập Buổi 3](https://github.com/chenjiinguyen/WA04/tree/master/Buoi3)
