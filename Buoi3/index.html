@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>To Do List</h1>
+    <ul id="todolist"></ul>
+    <button onclick="todolist()">Add Task</button>
+    <script>
+      // Khai báo biến list
+      let list = [];
+
+      // Hàm thêm Task vào Todolist
+      function todolist() {
+        // Prompt để lấy dữ liệu nhập
+        let val = prompt("Nhập Task cần làm");
+
+        // Đẩy dữ liệu từ promt vào mảng
+        list.push(val);
+
+        // Khai báo biến thẻ cha <ul>
+        let listToDo = document.getElementById("todolist");
+
+        // Xóa nội dung trong thẻ cha
+        listToDo.innerHTML = "";
+
+        // Vòng lặp
+        for (i = 0; i < list.length; i++) {
+          // Duyệt Mảng
+
+          // Tạo biến thẻ con <li>
+          let child = document.createElement("li");
+
+          child.innerHTML = list[i];
+          
+          // Gán biến vào thẻ cha
+          listToDo.appendChild(child);
+        }
+      }
+    </script>
+  </body>
+</html>
