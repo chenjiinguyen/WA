@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="display: flex">
+      <input id="a" type="number" />
+      <h4 id="pheptinh"></h4>
+      <input id="b" type="number" />
+      <h4>=</h4>
+      <input id="kq" type="number" />
+    </div>
+    <div>
+      <button>+</button>
+      <button>-</button>
+      <button>*</button>
+      <button>/</button>
+    </div>
+
+    <script>
+      let btns = document.getElementsByTagName("button");
+      for (let i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", tinhtoan);
+      }
+
+      function tinhtoan() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let pheptinh = document.getElementById("pheptinh");
+        let ketqua = document.getElementById("kq");
+        if (a != "" && b != "") {
+          a = Number(a);
+          b = Number(b);
+
+          if (this.innerHTML == "+") {
+            pheptinh.innerHTML = "+";
+            ketqua.value = a + b;
+          } else if (this.innerHTML == "-") {
+            pheptinh.innerHTML = "-";
+            ketqua.value = a - b;
+          } else if (this.innerHTML == "*") {
+            pheptinh.innerHTML = "*";
+            ketqua.value = a * b;
+          } else {
+            if (b != 0) {
+              pheptinh.innerHTML = "/";
+              ketqua.value = a / b;
+            } else {
+              ketqua.value = "";
+              alert("Phép tính bị lỗi");
+            }
+          }
+        } else {
+          alert("Vui Lòng Nhập A,B");
+        }
+      }
+    </script>
+  </body>
+</html>
