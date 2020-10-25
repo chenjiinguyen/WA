@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="formbtn">Show Form</button>
+    <div id="form" style="display: none;">
+        <textarea id="data" rows="10"></textarea>
+        <div style="display:flex;">
+            <button class="colorbtn" data-color="black">Black</button>
+            <button class="colorbtn" data-color="red">Red</button>
+            <button class="colorbtn" data-color="blue">Blue</button>
+            <button class="colorbtn" data-color="green">Green</button>
+        </div>
+        <p id="result"></p>
+    </div>
+    <script src="./index.js"></script>
+
+    <style>
+        #data {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</body>
+</html>
